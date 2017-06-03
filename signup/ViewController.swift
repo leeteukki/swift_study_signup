@@ -8,11 +8,34 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate{
+    @IBOutlet weak var nameTextField: UITextField!
 
+    @IBOutlet weak var idTextField: UITextField!
+    
+    @IBOutlet weak var psTextField: UITextField!
+    
+    @IBOutlet weak var telTextField: UITextField!
+    
+    @IBOutlet weak var blogTextField: UITextField!
+    
+    
+    @IBOutlet weak var resultTextField: UITextView!
+    
+    
+    @IBAction func signupAction(_ sender: Any) {
+        resultTextField.text = "\(nameTextField.text!) 가입을 축하합니다"
+    }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("textFieldShouldReturn")
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        nameTextField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {

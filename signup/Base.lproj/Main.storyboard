@@ -112,12 +112,14 @@
                                 <state key="normal" title="Sign UP">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signupAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rEF-Em-oY1"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xJ4-3b-Bl9">
                                 <rect key="frame" x="28" y="322" width="322" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -125,6 +127,14 @@
                         <color key="backgroundColor" red="1" green="0.94135110788055776" blue="0.41691401026190844" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.99810978009654205" green="1" blue="0.45343643306601011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <connections>
+                        <outlet property="blogTextField" destination="vO6-zd-2he" id="fcK-Qd-kND"/>
+                        <outlet property="idTextField" destination="2v8-gN-0sh" id="yhF-3C-iht"/>
+                        <outlet property="nameTextField" destination="WTj-l0-sA4" id="rhE-XA-Pcc"/>
+                        <outlet property="psTextField" destination="c5N-YR-B1L" id="ysN-8Z-eR7"/>
+                        <outlet property="resultTextField" destination="xJ4-3b-Bl9" id="eEp-Of-gkh"/>
+                        <outlet property="telTextField" destination="a24-9P-NFm" id="eQL-Vu-VnU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
